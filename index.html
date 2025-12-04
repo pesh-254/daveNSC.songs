@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BWM XMD NCS</title>
+    <meta name="description" content="Discover and stream the best NoCopyrightSounds music. Trending tracks, classics, and most played songs in a sleek, modern interface." />
+    <meta name="author" content="BWM XMD" />
+    
+    <!-- App Icons -->
+    <link rel="icon" href="https://url.bwmxmd.online/Adams.19mp7xen.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://url.bwmxmd.online/Adams.19mp7xen.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="BWM XMD NCS - No Copyright Sounds Music Hub" />
+    <meta property="og:description" content="Discover and stream the best NoCopyrightSounds music. Trending tracks, classics, and most played songs in a sleek, modern interface." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://url.bwmxmd.online/Adams.19mp7xen.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ibrahimaitech" />
+    <meta name="twitter:image" content="https://url.bwmxmd.online/Adams.19mp7xen.png" />
+    <script type="module" crossorigin src="/assets/index-BWwA7Kyh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-7czFBXcI.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Register service worker for background audio support
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
